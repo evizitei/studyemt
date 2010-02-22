@@ -36,8 +36,7 @@ class UsersController < ApplicationController
         format.html { redirect_to(@user) }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+        format_error_case(format,"new",@user.errors)
       end
     end
   end
@@ -53,8 +52,7 @@ class UsersController < ApplicationController
         format.html { redirect_to(@user) }
         format.xml  { head :ok }
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+        format_error_case(format,"edit",@user.errors)
       end
     end
   end
@@ -77,5 +75,10 @@ protected
       format.html 
       format.xml  { render :xml => xml }
     end
+  end
+  
+  def format_error_case(format,html_action,xml_object)
+    format.html { render :action => html_action }
+    format.xml  { render :xml => xml_object, :status => :unprocessable_entity }
   end
 end
