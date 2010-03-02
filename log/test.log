@@ -1882,3 +1882,683 @@ Rendering users/show.html.erb
   MONGODB db.users.update({:_id=>4b81fb27b5ce600603000006}, {"_id"=>4b81fb27b5ce600603000006, "email"=>"some.user@studyemt.com"})
 Rendering users/index.html.erb
 Rendering users/new.html.erb
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB db.users.update({:_id=>4b81fd9cb5ce600616000001}, {"_id"=>4b81fd9cb5ce600616000001, "email"=>"some.user@studyemt.com"})
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.users.update({:_id=>4b81fd9cb5ce600616000002}, {"_id"=>4b81fd9cb5ce600616000002, "email"=>"some.user@studyemt.com"})
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-02-21 21:44:28) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed in 2ms | 302 Found [http://test.host/users/37]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-02-21 21:44:28) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 0ms | 302 Found [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-02-21 21:44:28) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-02-21 21:44:28) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-02-21 21:44:28) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-02-21 21:44:28) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-02-21 21:44:28) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1007
+Completed in 1ms | 302 Found [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-02-21 21:44:28) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1008
+Completed in 1ms | 302 Found [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-02-21 21:44:28) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-02-21 21:44:28) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users?]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-02-21 21:44:28) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1011
+Completed in 1ms | 302 Found [http://test.host/users?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-02-21 21:44:28) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1012
+Completed in 1ms | 302 Found [http://test.host/users?]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-02-21 21:44:28) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/37/edit]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-02-21 21:44:28) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/new]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-02-21 21:44:28) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/37]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-02-21 21:44:28) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.users.update({:_id=>4b81fd9cb5ce600616000003}, {"_id"=>4b81fd9cb5ce600616000003, "email"=>"some.user@studyemt.com"})
+Rendering users/edit.html.erb
+  MONGODB db.users.update({:_id=>4b81fd9cb5ce600616000004}, {"_id"=>4b81fd9cb5ce600616000004, "email"=>"some.user@studyemt.com"})
+Rendering users/show.html.erb
+  MONGODB db.users.update({:_id=>4b81fd9cb5ce600616000005}, {"_id"=>4b81fd9cb5ce600616000005, "email"=>"some.user@studyemt.com"})
+  MONGODB db.users.update({:_id=>4b81fd9cb5ce600616000006}, {"_id"=>4b81fd9cb5ce600616000006, "email"=>"some.user@studyemt.com"})
+Rendering users/index.html.erb
+Rendering users/new.html.erb
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB db.users.update({:_id=>4b81fe7db5ce600622000001}, {"_id"=>4b81fe7db5ce600622000001, "email"=>"some.user@studyemt.com"})
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.users.update({:_id=>4b81fe7db5ce600622000002}, {"_id"=>4b81fe7db5ce600622000002, "email"=>"some.user@studyemt.com"})
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-02-21 21:48:13) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed in 2ms | 302 Found [http://test.host/users/37]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-02-21 21:48:13) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 0ms | 302 Found [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-02-21 21:48:13) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0 | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-02-21 21:48:13) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-02-21 21:48:13) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-02-21 21:48:13) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-02-21 21:48:13) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1007
+Completed in 1ms | 302 Found [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-02-21 21:48:13) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1008
+Completed in 1ms | 302 Found [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-02-21 21:48:13) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0 | 200 OK [http://test.host/users?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-02-21 21:48:13) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users?]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-02-21 21:48:13) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1011
+Completed in 1ms | 302 Found [http://test.host/users?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-02-21 21:48:13) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1012
+Completed in 1ms | 302 Found [http://test.host/users?]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-02-21 21:48:13) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/37/edit]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-02-21 21:48:13) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/new]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-02-21 21:48:13) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/37]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-02-21 21:48:13) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.users.update({:_id=>4b81fe7db5ce600622000003}, {"_id"=>4b81fe7db5ce600622000003, "email"=>"some.user@studyemt.com"})
+Rendering users/edit.html.erb
+  MONGODB db.users.update({:_id=>4b81fe7db5ce600622000004}, {"_id"=>4b81fe7db5ce600622000004, "email"=>"some.user@studyemt.com"})
+Rendering users/show.html.erb
+  MONGODB db.users.update({:_id=>4b81fe7db5ce600622000005}, {"_id"=>4b81fe7db5ce600622000005, "email"=>"some.user@studyemt.com"})
+  MONGODB db.users.update({:_id=>4b81fe7db5ce600622000006}, {"_id"=>4b81fe7db5ce600622000006, "email"=>"some.user@studyemt.com"})
+Rendering users/index.html.erb
+Rendering users/new.html.erb
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB db.users.update({:_id=>4b8d6cf8b5ce600a64000001}, {"_id"=>4b8d6cf8b5ce600a64000001, "email"=>"some.user@studyemt.com"})
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.users.update({:_id=>4b8d6cf8b5ce600a64000002}, {"_id"=>4b8d6cf8b5ce600a64000002, "email"=>"some.user@studyemt.com"})
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-03-02 13:54:33) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed in 3ms | 302 Found [http://test.host/users/37]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-03-02 13:54:33) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 1ms | 302 Found [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-03-02 13:54:33) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0 | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-03-02 13:54:33) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0 | 200 OK [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-03-02 13:54:33) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-03-02 13:54:33) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-03-02 13:54:33) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1007
+Completed in 1ms | 302 Found [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-03-02 13:54:33) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1008
+Completed in 1ms | 302 Found [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-02 13:54:33) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0 | 200 OK [http://test.host/users?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-02 13:54:33) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users?]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-02 13:54:33) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1011
+Completed in 1ms | 302 Found [http://test.host/users?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-02 13:54:33) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1012
+Completed in 1ms | 302 Found [http://test.host/users?]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-03-02 13:54:33) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/37/edit]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-02 13:54:33) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/new]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-02 13:54:33) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/37]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-03-02 13:54:33) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.users.update({:_id=>4b8d6cf9b5ce600a64000003}, {"_id"=>4b8d6cf9b5ce600a64000003, "email"=>"some.user@studyemt.com"})
+Rendering users/edit.html.erb
+  MONGODB db.users.update({:_id=>4b8d6cf9b5ce600a64000004}, {"_id"=>4b8d6cf9b5ce600a64000004, "email"=>"some.user@studyemt.com"})
+Rendering users/show.html.erb
+  MONGODB db.users.update({:_id=>4b8d6cf9b5ce600a64000005}, {"_id"=>4b8d6cf9b5ce600a64000005, "email"=>"some.user@studyemt.com"})
+  MONGODB db.users.update({:_id=>4b8d6cf9b5ce600a64000006}, {"_id"=>4b8d6cf9b5ce600a64000006, "email"=>"some.user@studyemt.com"})
+Rendering users/index.html.erb
+Rendering users/new.html.erb
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB db.users.update({:_id=>4b8d6d8eb5ce600a69000001}, {"_id"=>4b8d6d8eb5ce600a69000001, "email"=>"some.user@studyemt.com"})
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.users.update({:_id=>4b8d6d8eb5ce600a69000002}, {"_id"=>4b8d6d8eb5ce600a69000002, "email"=>"some.user@studyemt.com"})
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-03-02 13:57:02) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed in 2ms | 302 Found [http://test.host/users/37]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-03-02 13:57:02) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 0ms | 302 Found [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-03-02 13:57:02) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0 | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-03-02 13:57:02) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-03-02 13:57:02) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-03-02 13:57:02) [PUT]
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0 | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-03-02 13:57:02) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1007
+Completed in 1ms | 302 Found [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-03-02 13:57:02) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1008
+Completed in 1ms | 302 Found [http://test.host/users/1]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-02 13:57:02) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 0 | 200 OK [http://test.host/users?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-02 13:57:02) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users?]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-02 13:57:02) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1011
+Completed in 1ms | 302 Found [http://test.host/users?user%5Bthese%5D=params]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-03-02 13:57:02) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1012
+Completed in 1ms | 302 Found [http://test.host/users?]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-03-02 13:57:02) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/37/edit]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-03-02 13:57:02) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/new]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-03-02 13:57:02) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users/37]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-03-02 13:57:02) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 0ms (View: 0 | 200 OK [http://test.host/users]
+  MONGODB studyemt_test.system.namespaces.find({}, {})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.studyemt_test.remove({})
+  MONGODB db.users.update({:_id=>4b8d6d8eb5ce600a69000003}, {"_id"=>4b8d6d8eb5ce600a69000003, "email"=>"some.user@studyemt.com"})
+Rendering users/edit.html.erb
+  MONGODB db.users.update({:_id=>4b8d6d8eb5ce600a69000004}, {"_id"=>4b8d6d8eb5ce600a69000004, "email"=>"some.user@studyemt.com"})
+Rendering users/show.html.erb
+  MONGODB db.users.update({:_id=>4b8d6d8eb5ce600a69000005}, {"_id"=>4b8d6d8eb5ce600a69000005, "email"=>"some.user@studyemt.com"})
+  MONGODB db.users.update({:_id=>4b8d6d8eb5ce600a69000006}, {"_id"=>4b8d6d8eb5ce600a69000006, "email"=>"some.user@studyemt.com"})
+Rendering users/index.html.erb
+Rendering users/new.html.erb
+  MONGODB db.scenarios.update({:_id=>4b8d6d8eb5ce600a69000008}, {"_id"=>4b8d6d8eb5ce600a69000008})

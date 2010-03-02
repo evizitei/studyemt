@@ -37,3 +37,195 @@
   MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
   MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
   MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-02 14:09:54) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %h2 and nested within it.) on line #2 of app/views/welcome/index.html.haml:
+1: %h2 Welcome to studyemt.com!
+2:   %ul.option
+3:     %li= link_to "sorting challenges",sorting_challenges_url
+4:     
+
+    app/views/welcome/index.html.haml:2
+    haml (2.2.20) lib/haml/precompiler.rb:759:in `render_tag'
+    haml (2.2.20) lib/haml/precompiler.rb:232:in `process_line'
+    haml (2.2.20) lib/haml/precompiler.rb:196:in `precompile'
+    haml (2.2.20) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.20) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.20) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (93.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-03-02 14:10:10) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 132ms (View: 131 | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-02 14:10:12) [GET]
+
+NameError (uninitialized constant SortingChallengesController):
+  
+
+Rendered rescues/_trace (22.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SortingChallengesController#index (for 127.0.0.1 at 2010-03-02 14:12:58) [GET]
+  MONGODB studyemt_development.sorting_challenges.find({}, {})
+Rendering template within layouts/application
+Rendering sorting_challenges/index
+Completed in 29ms (View: 6 | 200 OK [http://localhost/sorting_challenges]
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin.$cmd.find({:ismaster=>1}, {}).limit(-1)
+  MONGODB db.sorting_challenges.update({:_id=>4b8d7193b5ce600ac1000001}, {"items"=>["Scene Safe", "BSI", "C-Spine Precautions (if needed)"], "name"=>"Assessment Steps", "_id"=>4b8d7193b5ce600ac1000001})
+
+
+Processing SortingChallengesController#index (for 127.0.0.1 at 2010-03-02 14:15:11) [GET]
+  MONGODB studyemt_development.sorting_challenges.find({}, {})
+Rendering template within layouts/application
+Rendering sorting_challenges/index
+Completed in 7ms (View: 2 | 200 OK [http://localhost/sorting_challenges]
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:15:14) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  haml (2.2.20) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:15:42) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+
+ActionView::MissingTemplate (Missing template sorting_challenges/show.erb in view path app/views):
+  haml (2.2.20) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:25:18) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+Rendering template within layouts/application
+Rendering sorting_challenges/show
+Completed in 62ms (View: 6 | 200 OK [http://localhost/sorting_challenges/4b8d7193b5ce600ac1000001]
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:25:31) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+Rendering template within layouts/application
+Rendering sorting_challenges/show
+Completed in 10ms (View: 5 | 200 OK [http://localhost/sorting_challenges/4b8d7193b5ce600ac1000001]
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:26:52) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+Rendering template within layouts/application
+Rendering sorting_challenges/show
+Completed in 11ms (View: 5 | 200 OK [http://localhost/sorting_challenges/4b8d7193b5ce600ac1000001]
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:33:25) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+Rendering template within layouts/application
+Rendering sorting_challenges/show
+Completed in 14ms (View: 8 | 200 OK [http://localhost/sorting_challenges/4b8d7193b5ce600ac1000001]
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:33:42) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+Rendering template within layouts/application
+Rendering sorting_challenges/show
+Completed in 14ms (View: 9 | 200 OK [http://localhost/sorting_challenges/4b8d7193b5ce600ac1000001]
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:33:53) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+Rendering template within layouts/application
+Rendering sorting_challenges/show
+Completed in 15ms (View: 10 | 200 OK [http://localhost/sorting_challenges/4b8d7193b5ce600ac1000001]
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:34:04) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+Rendering template within layouts/application
+Rendering sorting_challenges/show
+Completed in 15ms (View: 10 | 200 OK [http://localhost/sorting_challenges/4b8d7193b5ce600ac1000001]
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:34:43) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+Rendering template within layouts/application
+Rendering sorting_challenges/show
+Completed in 67ms (View: 10 | 200 OK [http://localhost/sorting_challenges/4b8d7193b5ce600ac1000001]
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:34:48) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+Rendering template within layouts/application
+Rendering sorting_challenges/show
+Completed in 7ms (View: 1 | 200 OK [http://localhost/sorting_challenges/4b8d7193b5ce600ac1000001]
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:34:54) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+Rendering template within layouts/application
+Rendering sorting_challenges/show
+Completed in 15ms (View: 10 | 200 OK [http://localhost/sorting_challenges/4b8d7193b5ce600ac1000001]
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:35:03) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+Rendering template within layouts/application
+Rendering sorting_challenges/show
+Completed in 15ms (View: 9 | 200 OK [http://localhost/sorting_challenges/4b8d7193b5ce600ac1000001]
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:35:20) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+Rendering template within layouts/application
+Rendering sorting_challenges/show
+Completed in 14ms (View: 9 | 200 OK [http://localhost/sorting_challenges/4b8d7193b5ce600ac1000001]
+
+
+Processing SortingChallengesController#show (for 127.0.0.1 at 2010-03-02 14:41:01) [GET]
+  Parameters: {"id"=>"4b8d7193b5ce600ac1000001"}
+  MONGODB studyemt_development.sorting_challenges.find({:_id=>4b8d7193b5ce600ac1000001}, {}).limit(-1)
+Rendering template within layouts/application
+Rendering sorting_challenges/show
+Completed in 11ms (View: 6 | 200 OK [http://localhost/sorting_challenges/4b8d7193b5ce600ac1000001]

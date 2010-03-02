@@ -13,7 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   #   map.resources :products
   
   map.resources :users
-  
+  map.resources :sorting_challenges
 
   # Sample resource route with options:
   #   map.resources :products, :member => { :short => :get, :toggle => :post }, :collection => { :sold => :get }
@@ -34,7 +34,7 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  # map.root :controller => "welcome"
+  map.root :controller => "welcome"
 
   # See how all your routes lay out with "rake routes"
 

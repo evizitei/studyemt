@@ -1,0 +1,28 @@
+%h2= @sorting_challenge.name
+#instructions
+  Place the items in the correct order
+#gameboard
+  #goal_box
+  #options_box
+    -@sorting_challenge.items.each do |item|
+      .option_box= item
+    
+%style
+  :sass
+    #gameboard
+      :width 600px
+      :height 700px
+      #goal_box
+        :width 200px
+        :height 600px
+        :float left
+        :border 1px grey solid
+      #options_box
+        :width 300px
+        :float right
+        .option_box
+          :margin 3px
+          :padding 3px
+          :padding-left 5px
+          :background-color #CC9999 
+          :color white
